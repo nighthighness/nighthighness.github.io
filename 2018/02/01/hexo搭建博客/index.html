@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Nighthighness">
 <meta property="og:description" content="hexo 搭建博客根据以下几个步骤进行，注意步骤顺序不要错 新建文件夹（Blog） git bash here — npm install -g hexo (安装后不报错，否则清空文件夹—-重新开始) 创建 hexo 文件夹  –进入hexo文件夹①git bash here —- hexo init②npm intall  （拉node包） 完成上述步骤：①hexo g②hexo s③local">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-01T05:30:16.838Z">
+<meta property="og:updated_time" content="2018-02-01T06:38:40.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建博客">
 <meta name="twitter:description" content="hexo 搭建博客根据以下几个步骤进行，注意步骤顺序不要错 新建文件夹（Blog） git bash here — npm install -g hexo (安装后不报错，否则清空文件夹—-重新开始) 创建 hexo 文件夹  –进入hexo文件夹①git bash here —- hexo init②npm intall  （拉node包） 完成上述步骤：①hexo g②hexo s③local">
@@ -43,7 +43,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #FF4343"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -100,7 +100,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #FF4343"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -194,6 +194,8 @@
 <h1 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h1><p>38line post_asset_folder: true</p>
 <h1 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h1><h2 id="Set-per-page-to-0-to-disable-pagination"><a href="#Set-per-page-to-0-to-disable-pagination" class="headerlink" title="Set per_page to 0 to disable pagination"></a>Set per_page to 0 to disable pagination</h2><p>per_page: 5<br>pagination_dir: page</p>
 <h2 id="如何更改主题"><a href="#如何更改主题" class="headerlink" title="如何更改主题"></a>如何更改主题</h2><p>如：<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a></p>
+<h2 id="头像加载方式"><a href="#头像加载方式" class="headerlink" title="头像加载方式"></a>头像加载方式</h2><p>① 进入themes 主题文件夹<br>② _config.yml 配置文件<br>③ 找到 <strong>avatar:img/xxx.jpg</strong><br>④ 将相应文件拷到相应文件夹中 </p>
+<h2 id="图片加载方式"><a href="#图片加载方式" class="headerlink" title="图片加载方式"></a>图片加载方式</h2><p>① 首先在_config.yml配置文件中更改<br>② #### post_asset_folder:true ####<br>③ hexo new “fileName”<br>④ 在生成的  <strong>fileName.md</strong> 文件中写入：<br>⑤  <br>⑥ 第五条内容会被自动解析，无法显示</p>
 <h3 id="hexo常见命令"><a href="#hexo常见命令" class="headerlink" title="hexo常见命令"></a>hexo常见命令</h3><p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #部署到GitHub<br>hexo help  # 查看帮助<br>hexo version  #查看Hexo的版本</p>
 <h3 id="命令缩写"><a href="#命令缩写" class="headerlink" title="命令缩写"></a>命令缩写</h3><p>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
 <h3 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h3><p>hexo s -g #生成并本地预览<br>hexo d -g #生成并上传</p>
@@ -213,6 +215,11 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat$.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -506,7 +513,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">人人为我 我为人人</div>
   	  	
     	</section>
     
