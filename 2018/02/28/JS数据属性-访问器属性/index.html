@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>test | Nighthighness</title>
+  <title>JS数据属性&amp;访问器属性 | Nighthighness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="####111111 &amp;lt;div&amp;gt;     &amp;lt;input type=&amp;quot;text&amp;quot; value=&amp;quot;请输入...&amp;quot;&amp;gt; &amp;lt;/div&amp;gt;">
+  <meta name="description" content="javaScript 中,一切皆对象。对象中可以包含”基本值、对象、函数”。创建自定义函数 第一种字面直接量var person = {     name:&amp;#39;eric&amp;#39;,     age:24,     intr:function(){         console.log(this.name)     }     } 第二种创建对象实例var person = new Obje">
+<meta name="keywords" content="-javaScript -es5">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2018/02/18/test/index.html">
+<meta property="og:title" content="JS数据属性&amp;访问器属性">
+<meta property="og:url" content="http://yoursite.com/2018/02/28/JS数据属性-访问器属性/index.html">
 <meta property="og:site_name" content="Nighthighness">
-<meta property="og:description" content="####111111 &amp;lt;div&amp;gt;     &amp;lt;input type=&amp;quot;text&amp;quot; value=&amp;quot;请输入...&amp;quot;&amp;gt; &amp;lt;/div&amp;gt;">
+<meta property="og:description" content="javaScript 中,一切皆对象。对象中可以包含”基本值、对象、函数”。创建自定义函数 第一种字面直接量var person = {     name:&amp;#39;eric&amp;#39;,     age:24,     intr:function(){         console.log(this.name)     }     } 第二种创建对象实例var person = new Obje">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-23T09:23:53.411Z">
+<meta property="og:updated_time" content="2018-02-28T09:31:47.526Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="####111111 &amp;lt;div&amp;gt;     &amp;lt;input type=&amp;quot;text&amp;quot; value=&amp;quot;请输入...&amp;quot;&amp;gt; &amp;lt;/div&amp;gt;">
+<meta name="twitter:title" content="JS数据属性&amp;访问器属性">
+<meta name="twitter:description" content="javaScript 中,一切皆对象。对象中可以包含”基本值、对象、函数”。创建自定义函数 第一种字面直接量var person = {     name:&amp;#39;eric&amp;#39;,     age:24,     intr:function(){         console.log(this.name)     }     } 第二种创建对象实例var person = new Obje">
   
     <link rel="alternative" href="/atom.xml" title="Nighthighness" type="application/atom+xml">
   
@@ -158,30 +159,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-test" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JS数据属性-访问器属性" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      test
+      JS数据属性&amp;访问器属性
     </h1>
   
 
         
-        <a href="/2018/02/18/test/" class="archive-article-date">
-  	<time datetime="2018-02-18T14:25:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-18</time>
+        <a href="/2018/02/28/JS数据属性-访问器属性/" class="archive-article-date">
+  	<time datetime="2018-02-28T08:43:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>####111111</p>
-<p><code>&lt;div&gt;
-    &lt;input type=&quot;text&quot; value=&quot;请输入...&quot;&gt;
-&lt;/div&gt;</code></p>
+        <p>javaScript 中,一切皆对象。对象中可以包含”基本值、对象、函数”。<br><strong>创建自定义函数</strong></p>
+<h4 id="第一种字面直接量"><a href="#第一种字面直接量" class="headerlink" title="第一种字面直接量"></a>第一种字面直接量</h4><p><code>var person = {
+    name:&#39;eric&#39;,
+    age:24,
+    intr:function(){
+        console.log(this.name)
+    }    
+}</code></p>
+<h4 id="第二种创建对象实例"><a href="#第二种创建对象实例" class="headerlink" title="第二种创建对象实例"></a>第二种创建对象实例</h4><p><code>var person = new Object();
+person.name = &quot;eric&quot;;
+person.age = 24;
+person.intr = function(){
+    console.log(person.name)
+}</code><br><strong>属性类型</strong><br>javaScript中定义了两种不用的属性类型：<br>    一种是数据属性：用于储存属性的值<br>    另一种是访问器属性：一般用来进行get/set操作</p>
+<p><font color="pink">数据属性</font><br>Configurable、Enumerable、Writable、Value<br>前三者默认值为<font color="pink">true</font>,Value默认值为特定值<br>设置对象数据属性为不可更改：<br><code>var person = {
+        name :&#39;eric&#39;,
+    }
+    Object.definerProperty(person,&#39;name&#39;,{
+        configurable:false;
+    })    
+    consoel.log(person.name); //eric
+    &lt;font color=&quot;blue&quot;&gt;delete&lt;/font&gt; person.name;
+    console.log(person.name); //eric</code> </p>
+<p><strong>访问器属性</strong><br>getter/setter函数<br>``<br>    var person = {<br>        name:’hammer’,<br>        age:’23’,<br>        gender:’male’<br>}<br>    Object.defineProperty(person,’age’,{<br>        get:function(){<br>            return this._age; //此时age属性只读<br>        }<br>    });</p>
+<pre><code>Object.defineProperty(person,&apos;name&apos;,{
+    set:function(name){
+        return this._name = name; //此时name属性只写
+    }
+});
+
+Object.defineProperty(person,&apos;gender&apos;,{
+    //此时gender属性可读可写
+    get:function(){
+        return this._gender; 
+    }
+    set:function(gender){
+        return this._gender = gender; 
+    }
+});
+</code></pre><p>``</p>
 
       
 
@@ -216,6 +253,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-javaScript -es5</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -266,7 +314,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/02/18/test/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/02/28/JS数据属性-访问器属性/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +328,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/02/28/JS数据属性-访问器属性/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JS数据属性&amp;访问器属性
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/02/04/php中索引数组与关联数组的区别/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">php中索引数组与关联数组的区别</div>
+    <a href="/2018/02/18/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">test</div>
       <i class="icon-circle-right"></i>
     </a>
   
