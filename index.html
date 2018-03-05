@@ -159,6 +159,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sublime" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/05/sublime/">sublime</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/05/sublime/" class="archive-article-date">
+  	<time datetime="2018-03-05T06:23:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>sublime 3安装及使用</strong></p>
+<p>作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。<br>官网一般有安装包下载  <a href="https//www.sublimetext.com">sublimetext.com</a><br>激活码一般度娘找</p>
+<h5 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h5><p>ctrl+shift+p 进入控制台，当然前提是安装了控制台功能<br>控制台功能：<br>在 ctrl+` 打开的底部任务栏窗口处添加以下代码<br><code>import urllib.request,os,hashlib; h = &#39;7183a2d3e96f11eeadd761d777e62404&#39; + &#39;e330c659d4bb41d3bdf022e94cab3cd0&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &#39;wb&#39; ).write(by)</code> </p>
+<p>安装成功之后，ctrl+shift+p 进入控制台 输入install package项<br>强大的插件安装功能</p>
+<p><strong>推荐使用</strong><br>①SublimeLiner – 类似于 webstrom\Idea 里面的 <font color="lightblue">ToDo</font> 能够高亮一些特别的注释<br>②Emmet (既是原来的Zen Coding) 在editplus里面也以 Emmet 显示<br>③JS Format JS代码格式化插件<br>④auto Prefixer Css3代码前缀自动补全<br>⑤Bracket Hightlighter 代码匹配，不担心掉括号了</p>
+<h5 id="还可以进行主题的选择"><a href="#还可以进行主题的选择" class="headerlink" title="还可以进行主题的选择"></a>还可以进行主题的选择</h5><p>同样通过 ctrl+shift+p 进入控制台 输入install package项<br>输入想要的theme主题 或 在输入的 theme  列表项相应选择安装</p>
+<h5 id="移除插件"><a href="#移除插件" class="headerlink" title="移除插件"></a>移除插件</h5><p>调出控制台<br><code>remove package</code><br>输入需要删除的 package  </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">sublime3</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/05/sublime/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-JS数据属性-访问器属性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -851,14 +931,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">es5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
@@ -867,7 +939,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">--sublime3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">-- sublime3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">sublime3</a>
               </li>
             
             <div class="clearfix"></div>
