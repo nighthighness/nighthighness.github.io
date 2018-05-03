@@ -159,6 +159,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-custom-domain" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/03/custom-domain/">custom domain</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/03/custom-domain/" class="archive-article-date">
+  	<time datetime="2018-05-03T02:22:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="绑定阿里云域名"><a href="#绑定阿里云域名" class="headerlink" title="绑定阿里云域名"></a>绑定阿里云域名</h4><p> 保证  <strong>阿里云域名</strong> 已经过实名认证 </p>
+<h5 id="①添加-cname-文件"><a href="#①添加-cname-文件" class="headerlink" title="①添加 cname 文件"></a>①添加 cname 文件</h5>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">hexo - domain</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/03/custom-domain/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-sublime" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -180,9 +254,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>sublime 3安装及使用</strong></p>
-<p>作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。<br>官网一般有安装包下载  <a href="https//www.sublimetext.com">sublimetext.com</a><br>激活码一般度娘找</p>
-<h5 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h5><p>ctrl+shift+p 进入控制台，当然前提是安装了控制台功能<br>控制台功能：<br>在 ctrl+` 打开的底部任务栏窗口处添加以下代码<br><code>import urllib.request,os,hashlib; h = &#39;7183a2d3e96f11eeadd761d777e62404&#39; + &#39;e330c659d4bb41d3bdf022e94cab3cd0&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &#39;wb&#39; ).write(by)</code> </p>
-<p>安装成功之后，ctrl+shift+p 进入控制台 输入install package项<br>强大的插件安装功能</p>
+<p>作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。<br>官网一般有安装包下载  <a href="https://www.sublimetext.com" target="_blank" rel="noopener">sublimetext.com</a><br>激活码一般度娘找</p>
+<h5 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h5><p>ctrl+shift+p 进入控制台，当然前提是安装了控制台功能<br>控制台功能：<br>在 ctrl+` 打开的底部任务栏窗口处添加以下代码</p>
+<pre><code>import urllib.request,os,hashlib; h = &apos;7183a2d3e96f11eeadd761d777e62404&apos; + &apos;e330c659d4bb41d3bdf022e94cab3cd0&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://sublime.wbond.net/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by)
+</code></pre><p>安装成功之后，ctrl+shift+p 进入控制台 输入install package项<br>强大的插件安装功能</p>
 <p><strong>推荐使用</strong><br>①SublimeLiner – 类似于 webstrom\Idea 里面的 <font color="lightblue">ToDo</font> 能够高亮一些特别的注释<br>②Emmet (既是原来的Zen Coding) 在editplus里面也以 Emmet 显示<br>③JS Format JS代码格式化插件<br>④auto Prefixer Css3代码前缀自动补全<br>⑤Bracket Hightlighter 代码匹配，不担心掉括号了</p>
 <h5 id="还可以进行主题的选择"><a href="#还可以进行主题的选择" class="headerlink" title="还可以进行主题的选择"></a>还可以进行主题的选择</h5><p>同样通过 ctrl+shift+p 进入控制台 输入install package项<br>输入想要的theme主题 或 在输入的 theme  列表项相应选择安装</p>
 <h5 id="移除插件"><a href="#移除插件" class="headerlink" title="移除插件"></a>移除插件</h5><p>调出控制台<br><code>remove package</code><br>输入需要删除的 package  </p>
@@ -295,72 +370,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/02/28/JS数据属性-访问器属性/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/18/test/">test</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/18/test/" class="archive-article-date">
-  	<time datetime="2018-02-18T14:25:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>####111111</p>
-<p><code>&lt;div&gt;
-    &lt;input type=&quot;text&quot; value=&quot;请输入...&quot;&gt;
-&lt;/div&gt;</code></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/18/test/">展开全文 >></a>
         </p>
       
 
@@ -504,11 +513,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
         		</li>
       		
 		</ul>
@@ -869,7 +878,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -931,14 +940,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
               </li>
              
@@ -947,7 +948,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">--sublime3</a>
+                <a href="javascript:void(0)" class="js-tag color4">hexo - domain</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -955,7 +960,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">-- sublime3</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
