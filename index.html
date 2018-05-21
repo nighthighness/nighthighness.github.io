@@ -151,6 +151,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Git-branch-使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/21/Git-branch-使用/">Git 工作流以及--branch 使用</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/21/Git-branch-使用/" class="archive-article-date">
+  	<time datetime="2018-05-21T15:12:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>说到 Git 的使用 , 首先 , 这是一个版本控制工具</p>
+<p>在 Git 的使用中, 存在着 <strong><font color="red">工作流</font></strong><br>也即是<strong><font color="red">working tree</font></strong><br>主要包括：<br>① 工作目录 – 包括实际存储的文件<br>② 缓存区(Index) – git 缓存区 保存临时的改动<br>③ HEAD – 指向最后一次提交的结果</p>
+<p>扒张图如下：<br> <img src="/2018/05/21/Git-branch-使用/1.png" title="git工作流"></p>
+<p> 👆 通过上图能够看出来 , git HEAD 最后指向的 一定是通过 commit 后的最终文件</p>
+<p>存在着以下的步骤：</p>
+<h5 id="git-add-eg-txt-—-gt"><a href="#git-add-eg-txt-—-gt" class="headerlink" title="git add eg.txt —&gt;"></a>git add eg.txt —&gt;</h5><p>将文件 添加到缓存区 </p>
+<h5 id="git-commit-m-“-提交信息-“-—-gt"><a href="#git-commit-m-“-提交信息-“-—-gt" class="headerlink" title="git commit -m “ 提交信息 “ —&gt;"></a>git commit -m “ 提交信息 “ —&gt;</h5><p>此时改动提交到了 HEAD </p>
+<h5 id="git-push-—-gt"><a href="#git-push-—-gt" class="headerlink" title="git push —&gt;"></a>git push —&gt;</h5><p>提交到 <font color="red">远程仓库</font>    </p>
+        
+          <a class="article-more-a" href="/2018/05/21/Git-branch-使用/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/21/Git-branch-使用/">more..(￣▽￣) >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-custom-domain" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -517,11 +600,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -945,11 +1028,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">es5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -962,10 +1053,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
