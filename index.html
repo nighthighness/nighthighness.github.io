@@ -151,6 +151,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-this-5种指向" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/29/this-5种指向/">this 5种指向</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/29/this-5种指向/" class="archive-article-date">
+  	<time datetime="2018-05-29T07:19:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="this-的指向问题"><a href="#this-的指向问题" class="headerlink" title="this 的指向问题"></a>this 的指向问题</h6><p>this 的指向容易头晕<br>此处翻了大神的文章 得出 this ——&gt; 5种指向</p>
+<p>下面准备好编辑器, 慢慢看</p>
+<font color="red"><em>第一种</em></font><br><strong>1. this 指向 当前调用 它 的对象</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">	var obj = &#123;</span><br><span class="line">		a: 20,</span><br><span class="line">		fun: function()&#123;</span><br><span class="line">			console.log(this.a)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">	obj.fun();  //20  </span><br><span class="line">	// 此时 this --&gt; obj </span><br><span class="line">	</span><br><span class="line">	obj.fun = &#123;</span><br><span class="line">		a: 30,</span><br><span class="line">		fun: function()&#123;</span><br><span class="line">			console.log(this.a)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	obj.fun.fun();  //30</span><br><span class="line">	// 此时 this --&gt; fun   </span><br><span class="line">	// this 指向只在上一级对象进行绑定</span><br></pre></td></tr></table></figure><br><br><font color="red"><em>第二种</em></font><br><strong>2. this 指向全局</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">	var a = 20;</span><br><span class="line">	var fun = function()&#123;</span><br><span class="line">		console.log(this.a)</span><br><span class="line">	// fun 为全局 this --&gt; 全局</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><br>
+        
+          <a class="article-more-a" href="/2018/05/29/this-5种指向/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/29/this-5种指向/">more..(￣▽￣) >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-git-基础操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -860,93 +938,6 @@
 
 
   
-    <article id="post-hexo搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/01/hexo搭建博客/">hexo搭建博客</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/01/hexo搭建博客/" class="archive-article-date">
-  	<time datetime="2018-02-01T04:59:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="根据以下几个步骤进行，注意步骤顺序不要错"><a href="#根据以下几个步骤进行，注意步骤顺序不要错" class="headerlink" title="根据以下几个步骤进行，注意步骤顺序不要错"></a>根据以下几个步骤进行，注意步骤顺序不要错</h4><ol>
-<li>新建文件夹(Blog)</li>
-<li><code>git bash here --- npm install -g hexo</code><br>(安装后不报错，否则清空文件夹—-重新开始)</li>
-<li>创建 hexo 文件夹  –进入hexo文件夹<br>①git bash here —- hexo init<br>②npm intall  (拉node包)</li>
-<li>完成上述步骤：<br>① <code>hexo g</code><br>② <code>hexo s</code><br>③ localhost:4000</li>
-<li><p>git —-个人博客远程库搭建<br>①新建库：命名：nighthighness.github.io<br>②连接库：hexo文件夹内 _config.yml 打开<br>deploy:<br>type: git<br>repository:   <a href="http://github.com/nighthighness/nighthighness.github.io.git" target="_blank" rel="noopener">http://github.com/nighthighness/nighthighness.github.io.git</a><br>branch: master</p>
-<p><strong>此处注意两点:type:git  、 repository:https—-&gt;http</strong></p>
-</li>
-<li>更改yml文件保存：<br>① hexo g<br>② 部署包(拉包)<code>npm install hexo-deployer-git --save</code><br>③ hexo d</li>
-<li>完成<br>nighthighness.github.io可打开</li>
-<li>域名绑定见另篇内容<br><a href="http://nighthighness.site/2018/05/03/custom-domain/" target="_blank" rel="noopener">绑定阿里云域名</a> </li>
-</ol>
-        
-          <a class="article-more-a" href="/2018/02/01/hexo搭建博客/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/01/hexo搭建博客/">more..(￣▽￣) >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1052,6 +1043,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -1061,14 +1060,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">es5</a>
               </li>
              
               <li class="article-tag-list-item">
