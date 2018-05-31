@@ -172,7 +172,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>如题： 放代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function Person() &#123; </span><br><span class="line">	this.name = &apos;eric&apos;; </span><br><span class="line">	this.age = 7; </span><br><span class="line">&#125;</span><br><span class="line">var name = new Person(); </span><br><span class="line">// 1.创建一个空对象obj </span><br><span class="line">var obj = &#123;&#125; </span><br><span class="line">// 2.设置obj的__proto__为原型 </span><br><span class="line">obj.__proto__ = Person.prototype; </span><br><span class="line">// 3.使用obj作为上下文调用Person函数 </span><br><span class="line">var person1 = Person.call(obj); </span><br><span class="line">// 4.如果构造函数返回的是原始值，那么这个返回值会被忽略 如果构造函数返回的是对象，就返回这个对象</span><br><span class="line">if (typeof person1 == &apos;object&apos;)&#123; </span><br><span class="line">	return person1; </span><br><span class="line">&#125;else&#123; </span><br><span class="line">	return person2 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function Person() &#123; </span><br><span class="line">	this.name = &apos;eric&apos;; </span><br><span class="line">	this.age = 7; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var name = new Person();</span><br><span class="line"></span><br><span class="line">// 1.创建一个空对象obj </span><br><span class="line">var obj = &#123;&#125;</span><br><span class="line"></span><br><span class="line">// 2.设置obj的__proto__为原型 </span><br><span class="line">obj.__proto__ = Person.prototype;</span><br><span class="line"></span><br><span class="line">// 3.使用obj作为上下文调用Person函数 </span><br><span class="line">var person1 = Person.call(obj); </span><br><span class="line"></span><br><span class="line">// 4.如果构造函数返回的是原始值，那么这个返回值会被忽略 如果构造函数返回的是对象，就返回这个对象</span><br><span class="line">if (typeof person1 == &apos;object&apos;)&#123; </span><br><span class="line">	return person1; </span><br><span class="line">&#125;else&#123; </span><br><span class="line">	return person2 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -1072,6 +1072,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
@@ -1081,10 +1085,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">sublime3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
             
             <div class="clearfix"></div>
