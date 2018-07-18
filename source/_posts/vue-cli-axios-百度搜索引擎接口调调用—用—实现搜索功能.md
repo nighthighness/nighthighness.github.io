@@ -5,6 +5,7 @@ tags:
 	- hexo
 	- vue-cli
 	- axios
+	- http
 ---
 #### vue_search 小案例
 
