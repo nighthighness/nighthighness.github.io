@@ -1,5 +1,5 @@
 ---
-title: custom domain
+title: hexo + domain绑定
 date: 2018-05-03 10:22:14
 tags: 
 	- hexo 

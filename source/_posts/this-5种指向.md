@@ -13,7 +13,7 @@ this 的指向容易头晕
 
 <font color="red">*第一种*</font>
 **1. this 指向 当前调用 它 的对象**
-```
+```javascript
 	var obj = {
 		a: 20,
 		fun: function(){
@@ -35,7 +35,7 @@ this 的指向容易头晕
 ```
 <font color="red">*第二种*</font>
 **2. this 指向全局**
-```
+```javascript
 	var a = 20;
 	var fun = function(){
 		console.log(this.a)
@@ -44,7 +44,7 @@ this 的指向容易头晕
 ```
 <!--more-->
 <font color="red">2.1 易出现的错误</font>
-```
+```javascript
 	var a = 10;
 	var obj = {
 		a: 20,
@@ -62,7 +62,7 @@ this 的指向容易头晕
 此时 obj.fun() this --> obj, foo() --> 无对象调用, this -->全局 全局 a = 10
 
 此时 使 foo()内 this 指向 a:20 ,需要 缓存 this
-```
+```javascript
 	var a = 10;
 	var obj = {
 		a: 20,
@@ -80,7 +80,7 @@ obj.fun();
 ```
 
 <font color="red">2.2 易出现的错误</font>
-```
+```javascript
 	var a = 10;
 	var obj = {
 		a: 20,
@@ -106,7 +106,7 @@ this 指向全局  this.a = 10
 
 <font color="red">*第三种*</font>
 **3.this 指向call 或 apply**
-```
+```javascript
 	var obj = {
 		a: 20,
 		fun: function(){
@@ -123,7 +123,7 @@ this-->obj2 this.a = 30
 
 <font color="red">*第四种*</font>
 **4.this 指向new 构造函数创建的对象 **
-```
+```javascript
 	function Money(){
 		this.money = 100;
 	} 
@@ -131,7 +131,8 @@ this-->obj2 this.a = 30
 ```
 <font color="red">*第五种*</font>
 **5.this 指向当前对象所调用的 callback **
-```
+
+```javascript
 	<div id="box">内容区</div>
 	var box = document.getElementById("box")
 	box.onclick = function(){
