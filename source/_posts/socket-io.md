@@ -15,14 +15,14 @@ npm install socket.io --save
 node 监听 3000 端口, io 对 connection 进行监听
 
 a.监听服务器所有客户端, 建立连接并返回所有连接对象
-```
+```node
 	io.sockets.on('connection',function(sockect){
 		console.log('one user is login')
 	})
 ```
 
 b.  io connect 后,  socket 进行监听事件 传递参数
- ```
+ ```node
 	sockect.on(event, function(name){
 		socket.emit("user" + name + "is login")    // 通过emit 向本连接传递
 	})
@@ -50,7 +50,7 @@ on()  监听 emit 发送的事件  参数：事件名，匿名函数
 Ⅱ. 客户端使用
 
 客户端通过引入 <script src="/socket.io/socket.io.js"></script> 即可使用 
-```
+```javascript
  $(document).ready(function() {
    var socket = io.connect();
 });
