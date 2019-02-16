@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="sublime3," />
+  <meta name="keywords" content="mac,php," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="sublime 3安装及使用 作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。官网一般有安装包下载  sublimetext.com激活码一般度娘找 插件使用ctrl+shift+p 进入控制台，当然前提是安装了控制台功能控制台功能：在 ctrl+` 打开的底部任务栏窗口处添加以下代码 import urllib.request,os,hashlib; h = &amp;apos">
-<meta name="keywords" content="sublime3">
+<meta name="description" content="在mac配置开发环境中，比较重要的一项为 php ，php 脚本运行需要 web 服务器支持mac 自带 php 与 apache，此文进行 php &amp;amp; apache 配置踩坑 启动apache123sudo apachectl start # 以管理员权限开启 apache 服务sudo apachectl stop # 停止 apache 服务sudo apachectl restar">
+<meta name="keywords" content="mac,php">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sublime">
-<meta property="og:url" content="http://yoursite.com/2018/03/05/sublime/index.html">
+<meta property="og:title" content="mac 配置apache&amp;php开发环境">
+<meta property="og:url" content="http://yoursite.com/2019/02/16/mac-配置apache-php开发环境/index.html">
 <meta property="og:site_name" content="Nighthighness">
-<meta property="og:description" content="sublime 3安装及使用 作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。官网一般有安装包下载  sublimetext.com激活码一般度娘找 插件使用ctrl+shift+p 进入控制台，当然前提是安装了控制台功能控制台功能：在 ctrl+` 打开的底部任务栏窗口处添加以下代码 import urllib.request,os,hashlib; h = &amp;apos">
+<meta property="og:description" content="在mac配置开发环境中，比较重要的一项为 php ，php 脚本运行需要 web 服务器支持mac 自带 php 与 apache，此文进行 php &amp;amp; apache 配置踩坑 启动apache123sudo apachectl start # 以管理员权限开启 apache 服务sudo apachectl stop # 停止 apache 服务sudo apachectl restar">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T01:03:54.000Z">
+<meta property="og:updated_time" content="2019-02-16T11:26:07.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sublime">
-<meta name="twitter:description" content="sublime 3安装及使用 作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。官网一般有安装包下载  sublimetext.com激活码一般度娘找 插件使用ctrl+shift+p 进入控制台，当然前提是安装了控制台功能控制台功能：在 ctrl+` 打开的底部任务栏窗口处添加以下代码 import urllib.request,os,hashlib; h = &amp;apos">
+<meta name="twitter:title" content="mac 配置apache&amp;php开发环境">
+<meta name="twitter:description" content="在mac配置开发环境中，比较重要的一项为 php ，php 脚本运行需要 web 服务器支持mac 自带 php 与 apache，此文进行 php &amp;amp; apache 配置踩坑 启动apache123sudo apachectl start # 以管理员权限开启 apache 服务sudo apachectl stop # 停止 apache 服务sudo apachectl restar">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/05/sublime/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/02/16/mac-配置apache-php开发环境/"/>
 
 
 
 
 
-  <title>sublime | Nighthighness</title>
+  <title>mac 配置apache&php开发环境 | Nighthighness</title>
   
 
 
@@ -244,7 +244,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/sublime/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/16/mac-配置apache-php开发环境/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nighthighness">
@@ -261,7 +261,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sublime</h1>
+          <h1 class="post-title" itemprop="name headline">mac 配置apache&php开发环境</h1>
         
 
         <div class="post-meta">
@@ -273,8 +273,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T14:23:43+08:00">
-                2018-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-16T18:44:42+08:00">
+                2019-02-16
               </time>
             
 
@@ -292,8 +292,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/05/sublime/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/05/sublime/" itemprop="commentCount"></span>
+                <a href="/2019/02/16/mac-配置apache-php开发环境/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/16/mac-配置apache-php开发环境/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -321,14 +321,19 @@
       
 
       
-        <p><strong>sublime 3安装及使用</strong></p>
-<p>作为轻量级编辑器，sublime如它的名字一样，好用，反应迅速，插件强大。<br>官网一般有安装包下载  <a href="https://www.sublimetext.com" target="_blank" rel="noopener">sublimetext.com</a><br>激活码一般度娘找</p>
-<h5 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h5><p>ctrl+shift+p 进入控制台，当然前提是安装了控制台功能<br>控制台功能：<br>在 ctrl+` 打开的底部任务栏窗口处添加以下代码</p>
-<pre><code>import urllib.request,os,hashlib; h = &apos;7183a2d3e96f11eeadd761d777e62404&apos; + &apos;e330c659d4bb41d3bdf022e94cab3cd0&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://sublime.wbond.net/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by)
-</code></pre><p>安装成功之后，ctrl+shift+p 进入控制台 输入install package项<br>强大的插件安装功能</p>
-<p><strong>推荐使用</strong><br>①SublimeLiner – 类似于 webstrom\Idea 里面的 <font color="lightblue">ToDo</font> 能够高亮一些特别的注释<br>②Emmet (既是原来的Zen Coding) 在editplus里面也以 Emmet 显示<br>③JS Format JS代码格式化插件<br>④auto Prefixer Css3代码前缀自动补全<br>⑤Bracket Hightlighter 代码匹配，不担心掉括号了</p>
-<h5 id="还可以进行主题的选择"><a href="#还可以进行主题的选择" class="headerlink" title="还可以进行主题的选择"></a>还可以进行主题的选择</h5><p>同样通过 ctrl+shift+p 进入控制台 输入install package项<br>输入想要的theme主题 或 在输入的 theme  列表项相应选择安装</p>
-<h5 id="移除插件"><a href="#移除插件" class="headerlink" title="移除插件"></a>移除插件</h5><p>调出控制台<br><code>remove package</code><br>输入需要删除的 package  </p>
+        <p>在mac配置开发环境中，比较重要的一项为 php ，php 脚本运行需要 web 服务器支持<br>mac 自带 php 与 apache，此文进行 php &amp; apache 配置踩坑</p>
+<h3 id="启动apache"><a href="#启动apache" class="headerlink" title="启动apache"></a>启动apache</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl start # 以管理员权限开启 apache 服务</span><br><span class="line">sudo apachectl stop # 停止 apache 服务</span><br><span class="line">sudo apachectl restart # 重启 apache 服务</span><br></pre></td></tr></table></figure>
+<h3 id="开启-apache"><a href="#开启-apache" class="headerlink" title="开启 apache"></a>开启 apache</h3><p>使用命令开启 apache 后<br>在浏览器输入：<font color="red">localhost</font><br>浏览器界面显示：<font color="red">It Works!</font></p>
+<p>当前 mac 启动了 apache 服务 ，其服务启动的文件路径在 /Library/WebServer/Documents 下<br>此路径过于复杂，我们将进行自定义 文件区 进行 存储 </p>
+<h3 id="修改-apache-服务启动-后的-文件夹路径"><a href="#修改-apache-服务启动-后的-文件夹路径" class="headerlink" title="修改 apache 服务启动 后的 文件夹路径"></a>修改 apache 服务启动 后的 文件夹路径</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/apache2/httpd.conf </span><br><span class="line">```  </span><br><span class="line">对 httpd.conf 文件进行修改</span><br><span class="line">1⃣️  按 i 键 进入脚本修改模式 </span><br><span class="line">编辑 ： 修改前</span><br></pre></td></tr></table></figure>
+<p>DocumentRoot “/Library/WebServer/Documents”</p>
+<p><directory "="" library="" webserver="" documents"=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">修改后：</span><br></pre></td></tr></table></figure></directory></p>
+<p>DocumentRoot “/Users/用户名/Documents/Sites”. # sites 为documents下 自定义文件夹 </p>
+<p><directory "="" users="" 用户名="" documents="" sites"=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2⃣️ 显示文件列表</span><br><span class="line">apache 默认不开启文件列表功能， 因此进行修改</span><br><span class="line">同样编辑 httpd.conf</span><br><span class="line">找到Options FollowSymLinks Multiviews 修改为</span><br></pre></td></tr></table></figure></directory></p>
+<p>Options FollowSymLinks Multiviews Indexes<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">3⃣️ 开启 php 支持</span><br><span class="line">找到</span><br></pre></td></tr></table></figure></p>
+<p>#LoadModule php7_module libexec/apache2/libphp7.so<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">删除 # </span><br><span class="line"></span><br><span class="line">4⃣️ 修改 serverName</span><br></pre></td></tr></table></figure></p>
+<p>#ServerAdmin you@example.com<br>ServerName localhost<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">此处 使用 esc 并输入 ：wq 保存文件后 ，开启 apache 服务 会发现 浏览器显示 403 权限错误</span><br><span class="line">需要进行文件夹权限设置</span><br><span class="line"></span><br><span class="line">停止服务 </span><br><span class="line"></span><br><span class="line">5⃣️ 设置文件夹权限</span><br></pre></td></tr></table></figure></p>
+<p>cd ~<br>cd documents<br>chmod o+rx Documents<br>```<br>此时 再次开启 apache 服务<br>进入浏览器<br>成功</p>
 
       
     </div>
@@ -346,7 +351,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/sublime3/" rel="tag"><i class="fa fa-tag"></i>sublime3</a>
+            <a href="/tags/mac/" rel="tag"><i class="fa fa-tag"></i>mac</a>
+          
+            <a href="/tags/php/" rel="tag"><i class="fa fa-tag"></i>php</a>
           
         </div>
       
@@ -359,8 +366,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/28/JS数据属性-访问器属性/" rel="next" title="JS数据属性&访问器属性">
-                <i class="fa fa-chevron-left"></i> JS数据属性&访问器属性
+              <a href="/2019/02/15/hexo-博客迁移/" rel="next" title="hexo 博客迁移">
+                <i class="fa fa-chevron-left"></i> hexo 博客迁移
               </a>
             
           </div>
@@ -368,10 +375,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/03/custom-domain/" rel="prev" title="hexo + domain绑定">
-                hexo + domain绑定 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -514,7 +517,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#插件使用"><span class="nav-number">1.</span> <span class="nav-text">插件使用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#还可以进行主题的选择"><span class="nav-number">2.</span> <span class="nav-text">还可以进行主题的选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#移除插件"><span class="nav-number">3.</span> <span class="nav-text">移除插件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动apache"><span class="nav-number">1.</span> <span class="nav-text">启动apache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启-apache"><span class="nav-number">2.</span> <span class="nav-text">开启 apache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-apache-服务启动-后的-文件夹路径"><span class="nav-number">3.</span> <span class="nav-text">修改 apache 服务启动 后的 文件夹路径</span></a></li></ol></div>
             
 
           </div>
