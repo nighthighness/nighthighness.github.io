@@ -90,7 +90,7 @@
 <meta property="og:description" content="vue-cli 移动端屏幕适配  手淘移动端方案1⃣️ 在 vue-cli 项目中添加插件 1npm install lib-flexiable --save 2⃣️ 安装 px 转 rem 插件 1npm install px2rem-loader --save 3⃣️ 文件的引入 在 main.js 入口文件中引入 1import &apos;lib-flexible/flexible&apos; 4⃣️ 在入口">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/02/19/vue移动端屏幕适配/1.png">
-<meta property="og:updated_time" content="2019-02-19T08:57:06.554Z">
+<meta property="og:updated_time" content="2019-02-19T09:00:26.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue移动端屏幕适配">
 <meta name="twitter:description" content="vue-cli 移动端屏幕适配  手淘移动端方案1⃣️ 在 vue-cli 项目中添加插件 1npm install lib-flexiable --save 2⃣️ 安装 px 转 rem 插件 1npm install px2rem-loader --save 3⃣️ 文件的引入 在 main.js 入口文件中引入 1import &apos;lib-flexible/flexible&apos; 4⃣️ 在入口">
@@ -329,7 +329,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install px2rem-loader --save</span><br></pre></td></tr></table></figure>
 <p>3⃣️ 文件的引入 在 main.js 入口文件中引入</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'lib-flexible/flexible'</span></span><br></pre></td></tr></table></figure>
-<p>4⃣️ 在入口文件添加 响应式 meta 标签</p>
+<p>4⃣️ 在入口文件 index.html 添加 响应式 meta 标签</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>5⃣️ 配置 导出 方法<br>在 bulid/utils.js 中 添加 px2remLoader 方法 将 px 转为 rem:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> px2remLoader = &#123;</span><br><span class="line">	loader: <span class="string">'px2rem-loader'</span>,</span><br><span class="line">	options: &#123;</span><br><span class="line">		<span class="comment">// 如标注稿宽为750，标注稿基准字体大小为75；标注稿宽为640，标注稿基准字体大小64</span></span><br><span class="line">		<span class="string">'remUnit'</span>: <span class="number">75</span>, </span><br><span class="line">		<span class="comment">// 根据设计稿 750 而定</span></span><br><span class="line">		<span class="string">'baseDpr'</span>: <span class="number">2</span>  </span><br><span class="line">		 <span class="comment">// 添加 html data-dpr 属性 flexiblejs 封装了 devicePixelRatio 方法 代指 2、3屏 时的 方案</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
