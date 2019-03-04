@@ -1665,6 +1665,7 @@ pre .javascript .function {
 }
 .sidebar {
   position: fixed;
+  height: 100%;
   right: 0;
   top: 0;
   bottom: 0;
@@ -1703,6 +1704,9 @@ pre .javascript .function {
 .site-overview {
   overflow-y: auto;
   overflow-x: hidden;
+}
+.sidebar #aplayer .aplayer-pic {
+  background-color: #e1a367 !important;
 }
 .sidebar-toggle {
   position: fixed;
@@ -1834,7 +1838,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #612279;
+  background: #a40ad1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2671,47 +2675,4 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
-}
-* {
-  cursor: url("/images/cat2.png"), auto !important;
-}
-:active {
-  cursor: url("/images/cat1.png"), auto !important;
-}
-.aplayer-list ol li:hover {
-/* 列表悬停颜色 */
-  background: rgba(18,13,118,0.7) none repeat scroll !important;
-}
-.aplayer-list ol li {
-/* 列表底色 */
-  background: rgba(137,8,8,0.7);
-}
-.aplayer-list-light {
-/* 列表播放歌曲颜色*/
-  background: rgba(240,201,201,0.7) none repeat scroll !important;
-}
-#player1 {
-  height: 140px;
-  margin: 20px 0px;
-  border: 1px solid #fff;
-  border-radius: 6px;
-  background: #080f76;
-  opacity: 0.5;
-  box-shadow: 0 0 5px #fff;
-}
-#player1 div,
-#player1 ol {
-  border-radius: 6px;
-}
-#player1 * {
-  color: #fff;
-}
-.aplayer-list-index {
-  float: left;
-}
-.aplayer-list-title {
-  float: left;
-}
-.aplayer-list-author {
-  float: right;
 }
