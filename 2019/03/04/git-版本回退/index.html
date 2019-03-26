@@ -89,13 +89,13 @@
 <meta property="og:site_name" content="Nighthighness">
 <meta property="og:description" content="git 版本回退 前置知识学习版本回退之前 需要具备 git 基本环境、以及基础操作知识具体操作 给出传送门git 基础操作 git 工作流及分支 git 版本回退注意:版本回退针对 push 操作之前1. 创建仓库，并进行第一次提交1234echo &amp;apos;第一次提交&amp;apos;&amp;gt;&amp;gt;1.txtgit add 1.txtgit commit -m &amp;quot;初次提交&amp;quot;g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/03/04/git-版本回退/1.png">
-<meta property="og:image" content="http://yoursite.com/2019/03/04/git-版本回退/2.png">
-<meta property="og:updated_time" content="2019-03-04T10:10:58.943Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/04/git-版本回退/1.jpeg">
+<meta property="og:image" content="http://yoursite.com/2019/03/04/git-版本回退/2.jpeg">
+<meta property="og:updated_time" content="2019-03-04T10:24:24.521Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 版本回退">
 <meta name="twitter:description" content="git 版本回退 前置知识学习版本回退之前 需要具备 git 基本环境、以及基础操作知识具体操作 给出传送门git 基础操作 git 工作流及分支 git 版本回退注意:版本回退针对 push 操作之前1. 创建仓库，并进行第一次提交1234echo &amp;apos;第一次提交&amp;apos;&amp;gt;&amp;gt;1.txtgit add 1.txtgit commit -m &amp;quot;初次提交&amp;quot;g">
-<meta name="twitter:image" content="http://yoursite.com/2019/03/04/git-版本回退/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/04/git-版本回退/1.jpeg">
 
 
 
@@ -324,8 +324,9 @@
       
 
       
-        <h3 id="git-版本回退-前置知识"><a href="#git-版本回退-前置知识" class="headerlink" title="git 版本回退 前置知识"></a>git 版本回退 前置知识</h3><p>学习版本回退之前 需要具备 git 基本环境、以及基础操作知识<br>具体操作 给出传送门<br><a href="http://nighthighness.site/2018/05/27/git-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" target="_blank" rel="noopener">git 基础操作</a> <br><br><a href="http://nighthighness.site/2018/05/21/Git-branch-%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener">git 工作流及分支</a></p>
-<h3 id="git-版本回退"><a href="#git-版本回退" class="headerlink" title="git 版本回退"></a>git 版本回退</h3><font color="red" bold="">注意:</font>版本回退针对 push 操作之前<br><br>1. 创建仓库，并进行第一次提交<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;第一次提交&apos;&gt;&gt;1.txt</span><br><span class="line">git add 1.txt</span><br><span class="line">git commit -m &quot;初次提交&quot;</span><br><span class="line">git remote add origin git@github.com/仓库地址</span><br></pre></td></tr></table></figure><br><br>2. 再次提交 为版本回退做模拟<br>在1.txt 中 修改 或 增加<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;12345&apos;&gt;&gt;1.txt</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;添加一行数字&quot;</span><br></pre></td></tr></table></figure><br><br>此时<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log # 查看 提交历史 以确定你需要回退的版本</span><br><span class="line">git reset --hard head^ # 回退到上一次的操作</span><br></pre></td></tr></table></figure><br><br>如图<br><img src="/2019/03/04/git-版本回退/1.png"><br><font color="red">head</font> 指git commit 之后， git 帮我们自动生成的一个指针，每个指针指向一个 commit 之后生成的16进制数，一般我们只记住 <font color="red">前4位</font> 
+        <h3 id="git-版本回退-前置知识"><a href="#git-版本回退-前置知识" class="headerlink" title="git 版本回退 前置知识"></a>git 版本回退 前置知识</h3><p>学习版本回退之前 需要具备 git 基本环境、以及基础操作知识<br>具体操作 给出传送门<br><a href="http://nighthighness.site/2018/05/27/git-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" target="_blank" rel="noopener">git 基础操作</a></p>
+<p><a href="http://nighthighness.site/2018/05/21/Git-branch-%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener">git 工作流及分支</a></p>
+<h3 id="git-版本回退"><a href="#git-版本回退" class="headerlink" title="git 版本回退"></a>git 版本回退</h3><font color="red" bold="">注意:</font>版本回退针对 push 操作之前<br><br>1. 创建仓库，并进行第一次提交<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;第一次提交&apos;&gt;&gt;1.txt</span><br><span class="line">git add 1.txt</span><br><span class="line">git commit -m &quot;初次提交&quot;</span><br><span class="line">git remote add origin git@github.com/仓库地址</span><br></pre></td></tr></table></figure><br><br>2. 再次提交 为版本回退做模拟<br>在1.txt 中 修改 或 增加<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;12345&apos;&gt;&gt;1.txt</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;添加一行数字&quot;</span><br></pre></td></tr></table></figure><br><br>此时<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log # 查看 提交历史 以确定你需要回退的版本</span><br><span class="line">git reset --hard head^ # 回退到上一次的操作</span><br></pre></td></tr></table></figure><br><br>如图<br><img src="/2019/03/04/git-版本回退/1.jpeg" title="回退到上次版本"><br><font color="red">head</font> 指git commit 之后， git 帮我们自动生成的一个指针，每个指针指向一个 commit 之后生成的16进制数，一般我们只记住 <font color="red">前4位</font> 
 
 <p>此时 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat 1.txt # 发现最后一次操作的 添加一行数据没有了 回退成功</span><br></pre></td></tr></table></figure>
@@ -337,7 +338,7 @@
 <p>2⃣️ 回退到指定 commit 点</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reflog # 查看历史 所有 commit 记录点</span><br><span class="line">git reset --hard xxxx   # 指定回退到 xxx 记录点</span><br><span class="line">cat 1.txt # 查看目前文件内容</span><br></pre></td></tr></table></figure>
 <p><font color="red">reflog</font> 查看所有历史点，以便进行任意回退操作</p>
-<p>如图<br><img src="/2019/03/04/git-版本回退/2.png" title="指定 commit 点回退"></p>
+<p>如图<br><img src="/2019/03/04/git-版本回退/2.jpeg" title="指定 commit 点回退"></p>
 
       
     </div>
@@ -377,6 +378,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/12/closure/" rel="prev" title="closure">
+                closure <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -460,7 +465,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -473,7 +478,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
