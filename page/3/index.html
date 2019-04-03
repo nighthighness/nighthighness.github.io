@@ -243,6 +243,283 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/24/常用字符串API/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nighthighness">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nighthighness">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/24/常用字符串API/" itemprop="url">常用字符串API</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-24T15:49:49+08:00">
+                2019-01-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/24/常用字符串API/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/24/常用字符串API/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="字符串常用API"><a href="#字符串常用API" class="headerlink" title="字符串常用API"></a>字符串常用API</h3><p>涉及 charAt() concat() indexOf() lastIndexOf() match() replace() slice() split()<br>substr() toString()</p>
+<h5 id="charAt-获取指定位置字符"><a href="#charAt-获取指定位置字符" class="headerlink" title="charAt() 获取指定位置字符"></a>charAt() 获取指定位置字符</h5><p><font color="red">charAt()</font><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.charAt(<span class="number">5</span>) <span class="comment">// 'i'  返回指定下标位置的字符</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="concat-拼接"><a href="#concat-拼接" class="headerlink" title="concat() 拼接"></a>concat() 拼接</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.concat(<span class="string">'code is here'</span>) <span class="comment">// 'this is code code is here' 返回 拼接后的字符串</span></span><br></pre></td></tr></table></figure>
+<h4 id="idnexOf-获取指定字符串位置的下标"><a href="#idnexOf-获取指定字符串位置的下标" class="headerlink" title="idnexOf() 获取指定字符串位置的下标"></a>idnexOf() 获取指定字符串位置的下标</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.indexOf(<span class="string">'this'</span>) <span class="comment">//	0  如果没有返回 -1</span></span><br><span class="line">str.indexOf(<span class="string">'word'</span>) <span class="comment">// -1</span></span><br></pre></td></tr></table></figure>
+<h4 id="lastIndexOf-获取指定字符串所在的最后一个下标"><a href="#lastIndexOf-获取指定字符串所在的最后一个下标" class="headerlink" title="lastIndexOf() 获取指定字符串所在的最后一个下标"></a>lastIndexOf() 获取指定字符串所在的最后一个下标</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code this is code'</span></span><br><span class="line">str.lastIndexOf(<span class="string">'code'</span>) <span class="comment">// 21 返回最后一个字符串的下标 如果没有 返回 -1</span></span><br></pre></td></tr></table></figure>
+<h4 id="match-获取指定字符串，-返回数组形式的字符串的相关信息"><a href="#match-获取指定字符串，-返回数组形式的字符串的相关信息" class="headerlink" title="match() 获取指定字符串， 返回数组形式的字符串的相关信息"></a>match() 获取指定字符串， 返回数组形式的字符串的相关信息</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.match(<span class="string">'code'</span>) <span class="comment">// ['word', index:7, input:'hello world' , groups: undefined]</span></span><br></pre></td></tr></table></figure>
+<h4 id="replace-查找并替换"><a href="#replace-查找并替换" class="headerlink" title="replace() 查找并替换"></a>replace() 查找并替换</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.replace(<span class="regexp">/code/</span>, <span class="string">'word'</span>) <span class="comment">// this is word</span></span><br></pre></td></tr></table></figure>
+<h4 id="slice-截取字符串"><a href="#slice-截取字符串" class="headerlink" title="slice() 截取字符串"></a>slice() 截取字符串</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.slice(<span class="number">3</span>,<span class="number">4</span>) <span class="comment">// 's'  slice(starti, endi) 含头不含尾</span></span><br></pre></td></tr></table></figure>
+<h4 id="split-切割"><a href="#split-切割" class="headerlink" title="split() 切割"></a>split() 切割</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'this is code'</span></span><br><span class="line">str.split(<span class="string">" "</span>) <span class="comment">// [ 'this' , 'is' , 'code'] 将字符串按 ' ' 进行分割, 并返回数组</span></span><br></pre></td></tr></table></figure>
+<h4 id="substr-截取-获取指定下标的指定数目的字符"><a href="#substr-截取-获取指定下标的指定数目的字符" class="headerlink" title="substr() 截取, 获取指定下标的指定数目的字符"></a>substr() 截取, 获取指定下标的指定数目的字符</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">' this  is code'</span></span><br><span class="line">str.substr(<span class="number">3</span>, <span class="number">6</span>) <span class="comment">// 'is is'  substr(start , end)</span></span><br></pre></td></tr></table></figure>
+<h4 id="toString-将数组转换为字符串"><a href="#toString-将数组转换为字符串" class="headerlink" title="toString() 将数组转换为字符串"></a>toString() 将数组转换为字符串</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">arr.toString() <span class="comment">// '1,2,3,4,5'</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/21/web部分面试题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nighthighness">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nighthighness">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/21/web部分面试题/" itemprop="url">web部分面试题(一)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-21T10:00:12+08:00">
+                2019-01-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/21/web部分面试题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/21/web部分面试题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h4><p>盒子模型包括四部分：<br>内容(content)、填充(padding)、边框(border)、边界(margin)<br>盒子模型可以分为两种：IE盒子模型和W3C标准盒子模型<br>IE 盒子模型：<br>width = border + padding + content<br>元素实际占地 ：<br>margin + width</p>
+<p>w3c 盒子模型：<br>width = content<br>元素实际占地：<br>margin + border + padding + content</p>
+<p><hr></p>
+<h4 id="position包含几种属性？absolute和relative的区别"><a href="#position包含几种属性？absolute和relative的区别" class="headerlink" title="position包含几种属性？absolute和relative的区别"></a>position包含几种属性？absolute和relative的区别</h4><p>static：默认状态、没有定位、正常流<br>inherit：从父元素继承 position 属性的值<br>fixed：生成绝对定位的元素（相对于当前视图窗口进行定位）<br>absolute：生成绝对定位的元素（相对于外层第一个已定位的父元素定位）<br>relative：生成相对定位的元素（相对于元素自身位置定位）</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/21/web部分面试题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/16/数组api汇总/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -681,285 +958,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/08/http-状态响应码：200、301、302、304、400、405、500/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nighthighness">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nighthighness">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/08/http-状态响应码：200、301、302、304、400、405、500/" itemprop="url">常见的 http 状态响应码：200、301、302、304、400、405、500</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-08T15:06:04+08:00">
-                2019-01-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/01/08/http-状态响应码：200、301、302、304、400、405、500/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/08/http-状态响应码：200、301、302、304、400、405、500/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>前端常见的 http 请求状态码：200、304、404、500.</p>
-<h4 id="1xx-临时响应"><a href="#1xx-临时响应" class="headerlink" title="1xx 临时响应"></a>1xx 临时响应</h4><p>表示 临时响应, 需要请求者继续操作</p>
-<h4 id="2xx成功"><a href="#2xx成功" class="headerlink" title="2xx成功"></a>2xx成功</h4><p>200 服务器已经成功处理了请求</p>
-<h4 id="xxx-重定向"><a href="#xxx-重定向" class="headerlink" title="xxx 重定向"></a>xxx 重定向</h4><p>301 (永久移动) 请求的网页已永久移动到新的位置, (get 或 head 请求时), 会自动将请求转到新位置<br>302 (临时移动) 服务器目前从不同位置的网页响应, 但请求应继续使用原有位置进行以后的请求<br>304 (未修改) 距离上次请求后, 请求的网页未修改, 服务器返回此响应</p>
-<h4 id="4xx-请求错误"><a href="#4xx-请求错误" class="headerlink" title="4xx 请求错误"></a>4xx 请求错误</h4><p>400 (错误请求) 服务器不理解请求的语法<br>401 (未授权) 请求要求身份验证<br>403 (禁止) 服务器拒绝请求<br>404 (未找到) 服务器找不到需要请求的资源<br>405 (方法禁用) 禁用请求中指定的方法</p>
-<h4 id="5xx-服务器错误"><a href="#5xx-服务器错误" class="headerlink" title="5xx 服务器错误"></a>5xx 服务器错误</h4><p>500 (服务器内部错误) 服务器遇到错误, 无法完成请求<br>501 (尚未实施) 服务器不具备完成请求的功能, 如：无法识别请求方法<br>504 (网关超时) 服务器作为网关或代理, 未及时从上游服务器收到请求<br>505 (http 版本不支持) 服务器不支持请求中所用的 http协议版本</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/07/js-数据类型/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nighthighness">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nighthighness">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/07/js-数据类型/" itemprop="url">js 隐式转换&强制转换</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-07T14:26:17+08:00">
-                2019-01-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/01/07/js-数据类型/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/07/js-数据类型/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="js-数据类型分类"><a href="#js-数据类型分类" class="headerlink" title="js 数据类型分类"></a>js 数据类型分类</h4><p>js数据类型分为原始类型 和 引用类型，原始类型也被称为值类型</p>
-<h2 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h2><p>字符串(String)、数字(Number)、布尔(Boolean)、空(Null)、未定义(Undefined)</p>
-<h2 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h2><font color="red" style="background-color: #EAEAEA;">对象(Object)、数组(Array)、函数(Function)</font>
-
-<h4 id="强制转换"><a href="#强制转换" class="headerlink" title="强制转换"></a>强制转换</h4><p>① <font color="red">Number()</font>  // 强制转换为nubmer<br>② <font color="red">String()</font>  // 强制转换为string<br>③ <font color="red">Boolean()</font> // 强制转换为boolean</p>
-<h4 id="隐式转换"><a href="#隐式转换" class="headerlink" title="隐式转换"></a>隐式转换</h4><p>JavaScript的数据类型分为六种：<br>分别为null,undefined,boolean,string,number,object<br>object是引用类型，其它的五种是基本类型或者是原始类型<br>我们可以用typeof方法打印来某个是属于哪个类型</p>
-<p>EG:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="string">'123'</span>))  <span class="comment">// 输出string</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="number">123</span>))    <span class="comment">// 输出number</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="literal">false</span>))  <span class="comment">// 输出boolean</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="运算规则"><a href="#运算规则" class="headerlink" title="运算规则"></a>运算规则</h4><p>① <font color="red"> + </font> 号 字符串与数字拼接  转为string<br>② <fnot color="red"> + </fnot> 号 字符串与非数字拼接 转为string<br>③ <font color="red"> - </font> 号 字符串与数字拼接  转为number<br>④ <font color="red"> - </font> 号 字符串与非数字拼接 转为 number</p>
-<p>⑤ <font color="red"> -  </font>  与非纯数字拼接 返回 NaN</p>
-<h4 id="运算"><a href="#运算" class="headerlink" title="== 运算"></a>== 运算</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log( <span class="literal">null</span> == <span class="literal">undefined</span> )  <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="literal">null</span> == <span class="number">0</span> )  <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="literal">false</span> == <span class="number">0</span> )  <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="literal">null</span> == <span class="literal">false</span> ) <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="literal">undefined</span> == <span class="literal">false</span> ) <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="literal">NaN</span> == <span class="literal">NaN</span> ) <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="literal">undefined</span> == <span class="number">0</span> ) <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1009,7 +1012,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
