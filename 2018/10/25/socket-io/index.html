@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="socket.io 使用Ⅰ.服务器端使用npm install socket.io --savenode 监听 3000 端口, io 对 connection 进行监听 a.监听服务器所有客户端, 建立连接并返回所有连接对象123io.sockets.on(&amp;apos;connection&amp;apos;,function(sockect)&amp;#123;	console.log(&amp;apos;one u">
+<meta name="description" content="socket.io 入门理解Ⅰ.服务器端使用npm install socket.io --savenode 监听 3000 端口, io 对 connection 进行监听 a.监听服务器所有客户端, 建立连接并返回所有连接对象123io.sockets.on(&amp;apos;connection&amp;apos;,function(sockect)&amp;#123;	console.log(&amp;apos;one">
 <meta name="keywords" content="websocket">
 <meta property="og:type" content="article">
 <meta property="og:title" content="socket.io">
 <meta property="og:url" content="http://yoursite.com/2018/10/25/socket-io/index.html">
 <meta property="og:site_name" content="Nighthighness">
-<meta property="og:description" content="socket.io 使用Ⅰ.服务器端使用npm install socket.io --savenode 监听 3000 端口, io 对 connection 进行监听 a.监听服务器所有客户端, 建立连接并返回所有连接对象123io.sockets.on(&amp;apos;connection&amp;apos;,function(sockect)&amp;#123;	console.log(&amp;apos;one u">
+<meta property="og:description" content="socket.io 入门理解Ⅰ.服务器端使用npm install socket.io --savenode 监听 3000 端口, io 对 connection 进行监听 a.监听服务器所有客户端, 建立连接并返回所有连接对象123io.sockets.on(&amp;apos;connection&amp;apos;,function(sockect)&amp;#123;	console.log(&amp;apos;one">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-05T09:47:22.000Z">
+<meta property="og:updated_time" content="2019-05-27T09:43:52.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="socket.io">
-<meta name="twitter:description" content="socket.io 使用Ⅰ.服务器端使用npm install socket.io --savenode 监听 3000 端口, io 对 connection 进行监听 a.监听服务器所有客户端, 建立连接并返回所有连接对象123io.sockets.on(&amp;apos;connection&amp;apos;,function(sockect)&amp;#123;	console.log(&amp;apos;one u">
+<meta name="twitter:description" content="socket.io 入门理解Ⅰ.服务器端使用npm install socket.io --savenode 监听 3000 端口, io 对 connection 进行监听 a.监听服务器所有客户端, 建立连接并返回所有连接对象123io.sockets.on(&amp;apos;connection&amp;apos;,function(sockect)&amp;#123;	console.log(&amp;apos;one">
 
 
 
@@ -321,7 +321,7 @@
       
 
       
-        <h4 id="socket-io-使用"><a href="#socket-io-使用" class="headerlink" title="socket.io 使用"></a>socket.io 使用</h4><p>Ⅰ.服务器端使用<br><code>npm install socket.io --save</code><br>node 监听 3000 端口, io 对 connection 进行监听</p>
+        <h4 id="socket-io-入门理解"><a href="#socket-io-入门理解" class="headerlink" title="socket.io 入门理解"></a>socket.io 入门理解</h4><p>Ⅰ.服务器端使用<br><code>npm install socket.io --save</code><br>node 监听 3000 端口, io 对 connection 进行监听</p>
 <p>a.监听服务器所有客户端, 建立连接并返回所有连接对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">io.sockets.on(&apos;connection&apos;,function(sockect)&#123;</span><br><span class="line">	console.log(&apos;one user is login&apos;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <p>b.  io connect 后,  socket 进行监听事件 传递参数<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sockect.on(event, function(name)&#123;</span><br><span class="line">	socket.emit(&quot;user&quot; + name + &quot;is login&quot;)    // 通过emit 向本连接传递</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
  <a id="more"></a>
@@ -457,7 +457,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -521,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-io-使用"><span class="nav-number">1.</span> <span class="nav-text">socket.io 使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-三种事件监听"><span class="nav-number">2.</span> <span class="nav-text">socket 三种事件监听</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#socket-通过-emit-on-进行数据双向通信-在客户端、服务器端均可使用-是socket-io的核心函数"><span class="nav-number"></span> <span class="nav-text">socket 通过 emit \ on 进行数据双向通信  在客户端、服务器端均可使用  是socket.io的核心函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-三种默认事件"><span class="nav-number">1.</span> <span class="nav-text">socket 三种默认事件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-io-入门理解"><span class="nav-number">1.</span> <span class="nav-text">socket.io 入门理解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-三种事件监听"><span class="nav-number">2.</span> <span class="nav-text">socket 三种事件监听</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#socket-通过-emit-on-进行数据双向通信-在客户端、服务器端均可使用-是socket-io的核心函数"><span class="nav-number"></span> <span class="nav-text">socket 通过 emit \ on 进行数据双向通信  在客户端、服务器端均可使用  是socket.io的核心函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-三种默认事件"><span class="nav-number">1.</span> <span class="nav-text">socket 三种默认事件</span></a></li></ol></div>
             
 
           </div>
