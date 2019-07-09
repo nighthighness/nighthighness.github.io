@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Nighthighness">
 <meta property="og:description" content="BScroll 插件的使用此处介绍开启 纵向&amp;amp; 横向 滚动better-scroll 设计者：黄奕 在设计时，通过css3 transition 属性进行的 插件封装;实现原理：    外层 div 容器定位，设置宽高；    内层 需滚动元素 宽高 超出外层 div 容器时 , 进行滚动效果显示 vue 项目中使用better-scroll (纵向) 按步骤进行 安装 1234vue i">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-12T12:14:23.395Z">
+<meta property="og:updated_time" content="2019-06-18T03:26:58.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue 中使用插件better-scroll">
 <meta name="twitter:description" content="BScroll 插件的使用此处介绍开启 纵向&amp;amp; 横向 滚动better-scroll 设计者：黄奕 在设计时，通过css3 transition 属性进行的 插件封装;实现原理：    外层 div 容器定位，设置宽高；    内层 需滚动元素 宽高 超出外层 div 容器时 , 进行滚动效果显示 vue 项目中使用better-scroll (纵向) 按步骤进行 安装 1234vue i">
@@ -354,6 +354,9 @@
 <li>横向滚动 修改对应css</li>
 </ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span>&#123;</span><br><span class="line">	<span class="attribute">float</span>:left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="常遇到的问题"><a href="#常遇到的问题" class="headerlink" title="常遇到的问题"></a>常遇到的问题</h4><ol>
+<li>层级关系出错<br>better-scroll 基本结构：wrapper层、content层；<br>wrapper 层， 可视的窗口大小；<br>content 层， 内容层，包含需滚动的n内容；<br>wrapper 占据可视窗口位置，content 在 wrapper 内滚动；<br>content 只能有一个；wrapper 内不可包含多个字元素；</li>
+</ol>
 
       
     </div>
@@ -480,7 +483,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">45</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -525,12 +528,7 @@
             </div>
           
 
-          <!--aplayer-->
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<br><br><br><br><br><br><br><br><br><br>
-<div id="aplayer"></div>
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
-<script type="text/javascript" src="/dist/music.js"></script>
+          
         </div>
       </section>
 
@@ -544,7 +542,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#BScroll-插件的使用"><span class="nav-number">1.</span> <span class="nav-text">BScroll 插件的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#此处介绍开启-纵向-amp-横向-滚动"><span class="nav-number">2.</span> <span class="nav-text">此处介绍开启 纵向&amp; 横向 滚动</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vue-项目中使用better-scroll-纵向"><span class="nav-number">2.1.</span> <span class="nav-text">vue 项目中使用better-scroll (纵向)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#开启横向滚动"><span class="nav-number">2.2.</span> <span class="nav-text">开启横向滚动</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#BScroll-插件的使用"><span class="nav-number">1.</span> <span class="nav-text">BScroll 插件的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#此处介绍开启-纵向-amp-横向-滚动"><span class="nav-number">2.</span> <span class="nav-text">此处介绍开启 纵向&amp; 横向 滚动</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vue-项目中使用better-scroll-纵向"><span class="nav-number">2.1.</span> <span class="nav-text">vue 项目中使用better-scroll (纵向)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#开启横向滚动"><span class="nav-number">2.2.</span> <span class="nav-text">开启横向滚动</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常遇到的问题"><span class="nav-number">3.</span> <span class="nav-text">常遇到的问题</span></a></li></ol></div>
             
 
           </div>
