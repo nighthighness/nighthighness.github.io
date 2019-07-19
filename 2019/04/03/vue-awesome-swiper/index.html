@@ -90,7 +90,7 @@
 <meta property="og:description" content="vue-awesome-swiper 轮播图插件(awesome-swiper demo官网)[https://surmon-china.github.io/vue-awesome-swiper/] 分为几类： 带分页器、带左右按钮、垂直滑动、水平滑动、多图滑动、3d效果、缩略图控制基本包含 开发需要涉及的轮播图模式 vue-cli 启空白项目1vue init webpack project 按">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/04/03/vue-awesome-swiper/1.png">
-<meta property="og:updated_time" content="2019-04-03T12:09:21.615Z">
+<meta property="og:updated_time" content="2019-07-10T07:55:58.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue-awesome-swiper">
 <meta name="twitter:description" content="vue-awesome-swiper 轮播图插件(awesome-swiper demo官网)[https://surmon-china.github.io/vue-awesome-swiper/] 分为几类： 带分页器、带左右按钮、垂直滑动、水平滑动、多图滑动、3d效果、缩略图控制基本包含 开发需要涉及的轮播图模式 vue-cli 启空白项目1vue init webpack project 按">
@@ -337,6 +337,10 @@
 <p>js 中：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    data() &#123;</span><br><span class="line">      <span class="keyword">return</span> &#123;</span><br><span class="line">        swiperOption: &#123;</span><br><span class="line">          slidesPerView: <span class="number">3</span>,</span><br><span class="line">          spaceBetween: <span class="number">30</span>,</span><br><span class="line">          freeMode: <span class="literal">true</span>,</span><br><span class="line">          pagination: &#123;</span><br><span class="line">            el: <span class="string">'.swiper-pagination'</span>,</span><br><span class="line">            clickable: <span class="literal">true</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
 <p>参数官方文档：</p>
 <p>(swiper)[<a href="https://www.swiper.com.cn/api/index2.html" target="_blank" rel="noopener">https://www.swiper.com.cn/api/index2.html</a>] </p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>swiper 加载后，无法实现loop 循环播放</p>
+<p>原因：<br>loop属性不是响应式的，数据变动之后不会自动初始化整个滑块</p>
+<p>解决办法：<br>添加 <font color="red">v-if</font> 判断，监听list 长度变化，并添加父元素监听属性 <font>observer\observeParents</font></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;swiper :options=<span class="string">"swiperOption"</span> v-<span class="keyword">if</span>=<span class="string">"list.length&gt;0"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">  swiperOption: &#123;</span><br><span class="line">          slidesPerView: <span class="number">1</span>,</span><br><span class="line">          spaceBetween: <span class="number">30</span>,</span><br><span class="line">          autoplay:<span class="literal">true</span>,</span><br><span class="line">          loop: <span class="literal">true</span>,    </span><br><span class="line">          observer:<span class="literal">true</span>,<span class="comment">//修改swiper自己或子元素时，自动初始化swiper </span></span><br><span class="line">　　       observeParents:<span class="literal">true</span></span><br><span class="line">          ...</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -463,7 +467,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">45</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -522,7 +526,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-awesome-swiper-轮播图插件"><span class="nav-number">1.</span> <span class="nav-text">vue-awesome-swiper 轮播图插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法"><span class="nav-number">2.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全局挂载"><span class="nav-number">4.</span> <span class="nav-text">全局挂载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件挂载-默认silder"><span class="nav-number">5.</span> <span class="nav-text">组件挂载(默认silder)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用不同的slider样式"><span class="nav-number">6.</span> <span class="nav-text">使用不同的slider样式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-awesome-swiper-轮播图插件"><span class="nav-number">1.</span> <span class="nav-text">vue-awesome-swiper 轮播图插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法"><span class="nav-number">2.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全局挂载"><span class="nav-number">4.</span> <span class="nav-text">全局挂载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件挂载-默认silder"><span class="nav-number">5.</span> <span class="nav-text">组件挂载(默认silder)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用不同的slider样式"><span class="nav-number">6.</span> <span class="nav-text">使用不同的slider样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">6.1.</span> <span class="nav-text">问题</span></a></li></ol></li></ol></div>
             
 
           </div>
