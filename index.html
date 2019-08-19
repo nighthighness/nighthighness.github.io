@@ -327,7 +327,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  430 字
+                  514 字
                 </span>
               
 
@@ -354,14 +354,15 @@
       
         
           
-            <h4 id="新浪云-上线"><a href="#新浪云-上线" class="headerlink" title="新浪云 上线"></a>新浪云 上线</h4><p>前言：<br>pc 端 项目上线 带图操作<br><a href="http://nighthighness.site/2019/03/26/%E6%96%B0%E6%B5%AA%E4%BA%91%E9%A1%B9%E7%9B%AE%E4%B8%8A%E7%BA%BF/" target="_blank" rel="noopener">新浪云项目上线 有图</a></p>
+            <h4 id="新浪云-上线"><a href="#新浪云-上线" class="headerlink" title="新浪云 上线"></a>新浪云 上线</h4><p>由于 新浪云 项目上线坑比较多 ，请 做好 <font color="red">心理准备</font><br>前言：<br>pc 端 项目上线 带图操作<br><a href="http://nighthighness.site/2019/03/26/%E6%96%B0%E6%B5%AA%E4%BA%91%E9%A1%B9%E7%9B%AE%E4%B8%8A%E7%BA%BF/" target="_blank" rel="noopener">新浪云项目上线 有图</a></p>
 <h4 id="vue-新浪云上线"><a href="#vue-新浪云上线" class="headerlink" title="vue 新浪云上线"></a>vue 新浪云上线</h4><p>由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。</p>
 <p>新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050</p>
 <h5 id="1-node-服务器接口中："><a href="#1-node-服务器接口中：" class="headerlink" title="1. node 服务器接口中："></a>1. node 服务器接口中：</h5><p>node app.js 改为 <font color="red"> index.js </font> （此项为新浪云要求，必须改！）<br>修改端口：5050</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.listen(process.env.PORT || <span class="number">5050</span>);</span><br></pre></td></tr></table></figure>
 <h5 id="2-node-mysql连接池-中："><a href="#2-node-mysql连接池-中：" class="headerlink" title="2. node mysql连接池 中："></a>2. node mysql连接池 中：</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql.createPool(&#123;</span><br><span class="line">	host:<span class="string">'新浪云主库地址'</span>,</span><br><span class="line">	user:<span class="string">'新浪云数据库生成的用户名'</span>,</span><br><span class="line">	password:<span class="string">'新浪云数据库生成的用户名'</span>,</span><br><span class="line">	dataBase:<span class="string">'新浪云数据库名称'</span></span><br><span class="line">	...</span><br><span class="line">	&#125;)</span><br></pre></td></tr></table></figure>
-<h5 id="3-vue-中："><a href="#3-vue-中：" class="headerlink" title="3. vue 中："></a>3. vue 中：</h5><p>由于新浪云项目无法设置nginx, 端口无法映射，因此需要手动设置接口地址<br>在main.js 中配置 ：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Vue.prototype.host = <span class="string">'http://xxx.applinzi.com'</span>  <span class="comment">// 应用信息处的服务器地址</span></span><br><span class="line"><span class="keyword">this</span>.axios.get(<span class="keyword">this</span>.host + <span class="string">"/list/banner"</span>)</span><br><span class="line">        .then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123; ... &#125;)</span><br></pre></td></tr></table></figure></p>
-<h5 id="4-mysql-中："><a href="#4-mysql-中：" class="headerlink" title="4. mysql 中："></a>4. mysql 中：</h5><p> mysql 修改 一系列信息 上传myql 到共享数据库 如：</p>
+<h5 id="3-vue-中："><a href="#3-vue-中：" class="headerlink" title="3. vue 中："></a>3. vue 中：</h5><p>由于新浪云项目无法设置nginx, 端口无法映射，因此需要手动设置接口地址<br>即：涉及接口地址都需要 进行 对应 修改 如下示例： <font color="red">/list/banner</font>&gt;<br>在main.js 中配置 ：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Vue.prototype.host = <span class="string">'http://xxx.applinzi.com'</span>  <span class="comment">// 应用信息处的服务器地址 </span></span><br><span class="line"><span class="keyword">this</span>.axios.get(<span class="keyword">this</span>.host + <span class="string">"/list/banner"</span>)</span><br><span class="line">        .then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123; ... &#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="4-mysql-中："><a href="#4-mysql-中：" class="headerlink" title="4. mysql 中："></a>4. mysql 中：</h5><p> 数据库必须先上传一次 ，才能看到 库 信息，因此，上传一次后，对库及 项目相关信息进行修改<br> mysql 修改 一系列信息 再次上传myql 到共享数据库 修改如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into bannerList values(&apos;1&apos;,&apos;http://xxx.applinzi.com/img/1.jpg&apos;,xxx,xxx);</span><br></pre></td></tr></table></figure>
 <h5 id="5-vue-项目打包：-npm-run-build-—-gt-生成-dist"><a href="#5-vue-项目打包：-npm-run-build-—-gt-生成-dist" class="headerlink" title="5. vue 项目打包： npm run build —&gt; 生成 dist"></a>5. vue 项目打包： npm run build —&gt; 生成 dist</h5><p><font color="red">dist</font> 文件 内为 npm 将 vue 打包后 生成的 前端所有 静态资源文件</p>
 <h5 id="6-dist-文件夹-放入-node-public-下"><a href="#6-dist-文件夹-放入-node-public-下" class="headerlink" title="6. dist 文件夹 放入 node public 下"></a>6. dist 文件夹 放入 node public 下</h5><p>此处 需注意托管 dist 文件夹</p>
@@ -1211,7 +1212,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">19k</span>
+    <span title="Site words total count">19.1k</span>
   
 </div>
 
