@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="新浪云 上线前言：pc 端 项目上线 带图操作新浪云项目上线 有图 vue 新浪云上线由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。 新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050 1. node 服务器接口中：node app.js 改为 &amp;lt;font color=&amp;quot;red&amp;quot;&amp;">
+<meta name="description" content="新浪云 上线前言：pc 端 项目上线 带图操作新浪云项目上线 有图 vue 新浪云上线由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。 新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050 1. node 服务器接口中：node app.js 改为  index.js  （此项为新浪云要求，必须改！）修改端口：">
 <meta name="keywords" content="vue-cli,新浪云">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue+新浪云+node项目上线">
 <meta property="og:url" content="http://yoursite.com/2019/08/17/vue-新浪云-node项目上线/index.html">
 <meta property="og:site_name" content="Nighthighness">
-<meta property="og:description" content="新浪云 上线前言：pc 端 项目上线 带图操作新浪云项目上线 有图 vue 新浪云上线由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。 新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050 1. node 服务器接口中：node app.js 改为 &amp;lt;font color=&amp;quot;red&amp;quot;&amp;">
+<meta property="og:description" content="新浪云 上线前言：pc 端 项目上线 带图操作新浪云项目上线 有图 vue 新浪云上线由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。 新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050 1. node 服务器接口中：node app.js 改为  index.js  （此项为新浪云要求，必须改！）修改端口：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-19T06:44:13.198Z">
+<meta property="og:updated_time" content="2019-08-19T08:26:06.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue+新浪云+node项目上线">
-<meta name="twitter:description" content="新浪云 上线前言：pc 端 项目上线 带图操作新浪云项目上线 有图 vue 新浪云上线由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。 新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050 1. node 服务器接口中：node app.js 改为 &amp;lt;font color=&amp;quot;red&amp;quot;&amp;">
+<meta name="twitter:description" content="新浪云 上线前言：pc 端 项目上线 带图操作新浪云项目上线 有图 vue 新浪云上线由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。 新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050 1. node 服务器接口中：node app.js 改为  index.js  （此项为新浪云要求，必须改！）修改端口：">
 
 
 
@@ -326,7 +326,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  386 字
+                  376 字
                 </span>
               
 
@@ -354,9 +354,8 @@
         <h4 id="新浪云-上线"><a href="#新浪云-上线" class="headerlink" title="新浪云 上线"></a>新浪云 上线</h4><p>前言：<br>pc 端 项目上线 带图操作<br><a href="http://nighthighness.site/2019/03/26/%E6%96%B0%E6%B5%AA%E4%BA%91%E9%A1%B9%E7%9B%AE%E4%B8%8A%E7%BA%BF/" target="_blank" rel="noopener">新浪云项目上线 有图</a></p>
 <h4 id="vue-新浪云上线"><a href="#vue-新浪云上线" class="headerlink" title="vue 新浪云上线"></a>vue 新浪云上线</h4><p>由于 前言篇 图片解释已很详细，默认 新浪云界面 已熟练 ，此处不再 配图 解释。</p>
 <p>新浪云端口 要求 5050 端口监听 因此，mysql 与 vue 所有组件修改axios 端口：5050</p>
-<h5 id="1-node-服务器接口中："><a href="#1-node-服务器接口中：" class="headerlink" title="1. node 服务器接口中："></a>1. node 服务器接口中：</h5><pre><code>node app.js 改为 &lt;font color=&quot;red&quot;&gt; index.js &lt;/font&gt; （此项为新浪云要求，必须改！）
-修改端口：5050
-</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.listen(process.env.PORT || <span class="number">5050</span>);</span><br></pre></td></tr></table></figure>
+<h5 id="1-node-服务器接口中："><a href="#1-node-服务器接口中：" class="headerlink" title="1. node 服务器接口中："></a>1. node 服务器接口中：</h5><p>node app.js 改为 <font color="red"> index.js </font> （此项为新浪云要求，必须改！）<br>修改端口：5050</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.listen(process.env.PORT || <span class="number">5050</span>);</span><br></pre></td></tr></table></figure>
 <h5 id="2-node-mysql连接池-中："><a href="#2-node-mysql连接池-中：" class="headerlink" title="2. node mysql连接池 中："></a>2. node mysql连接池 中：</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql.createPool(&#123;</span><br><span class="line">	host:<span class="string">'新浪云主库地址'</span>,</span><br><span class="line">	user:<span class="string">'新浪云数据库生成的用户名'</span>,</span><br><span class="line">	password:<span class="string">'新浪云数据库生成的用户名'</span>,</span><br><span class="line">	dataBase:<span class="string">'新浪云数据库名称'</span></span><br><span class="line">	...</span><br><span class="line">	&#125;)</span><br></pre></td></tr></table></figure>
 <h5 id="3-vue-中："><a href="#3-vue-中：" class="headerlink" title="3. vue 中："></a>3. vue 中：</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.axios.get(<span class="string">"http://localhost:5050/list/banner"</span>)</span><br><span class="line">        .then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123; ... &#125;)</span><br></pre></td></tr></table></figure>
 <h5 id="4-mysql-中："><a href="#4-mysql-中：" class="headerlink" title="4. mysql 中："></a>4. mysql 中：</h5><p> mysql 修改 一系列信息 上传myql 到共享数据库 如：</p>
