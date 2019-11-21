@@ -1,1 +1,1 @@
-var titleTime,OriginTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="不要玩啦,快回来~",clearTimeout(titleTime)):(document.title="你回来啦~"+OriginTitle,titleTime=setTimeout(function(){document.title=OriginTitle},2e3))});
+var titleTime,OriginTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="玩的high么～",clearTimeout(titleTime)):(document.title="回来撸代码..."+OriginTitle,titleTime=setTimeout(function(){document.title=OriginTitle},2e3))});
